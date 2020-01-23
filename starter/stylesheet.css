@@ -1,0 +1,48 @@
+html {
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+		*,*:before, *:after {
+			webkit-box-sizing:inherit;
+			-moz-box-sizing:inherit;
+			box-sizing:inherit;
+		}
+		#container {
+			background-color:lightgrey;
+			display:grid;
+			grid-template-columns:repeat(12, 1fr);
+			grid-gap:1em;
+			grid-auto-rows:minmax(100px, auto);
+		}
+.header {
+			grid-column:1/13;
+			grid-row: 1/4;
+			background-color:lightgrey;
+			background-image: url("images/sunset-crop.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto;
+			}
+.nav {
+			grid-column:1/13;
+			background-color:lightblue;
+			display:grid;
+			grid-template-columns:repeat(5 auto);
+			grid-auto-rows:minmax(100px auto);
+			justify-content:space-evenly;
+		}
+img {
+			max-width:100%;
+			height:auto;
+		}
+.footer {
+			grid-column:1/13;
+			background-color:cadetblue;
+			font-size:25px;
+			font-family: aladin, "alex-brush", "annie-use-your-telescope","averia-sans-libre",allan, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+			text-align:center;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+		}
